@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Mono', monospace;  /*google fonts */
+    color: #020101;
+    background: white;
+    
+   
+}
+a{
+    color: #000000;
+    text-decoration: none;
+}
+.instagram{
+    max-width: 20px;
+    max-height: 20px;
+    border-radius: 50%;
+}
+.welcome{
+    padding-top: 20px;
+    border-bottom: 0.4px solid;
+    padding-bottom: 20px;
+    font-size: 320%;
+    font-family: 'Great Vibes', cursive;
+}
+.nav-bar{
+    display: flex;
+    font-weight: 400;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 50px;
+}
+.nav-bar-dois{
+    display: flex;
+    font-weight: 400;
+    gap: 30px;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding-bottom:  23px;
+}
+.logo{
+    padding: 5%;
+    border-radius: 50%;
+    max-width:500px; /*os valorres auto para o width e height. Assim a escala é feita conforme largura ou altura (o que atingir primeiro) e a proporção é feita automaticamente.
+                     fiz isso para reduzir o tamanho da imagem no site, com um valor de 500px no maximo*/
+    max-height:500px;
+    min-width: 240;
+    width: auto;
+    height: auto;
+}
+.black{
+    width: 100%;
+    height: 400px;
+    background-color: #000000;
+}
+.fundo{
+    height: 400px;
+    padding: 30px;
+    background-image: url(../icons/pombinhos-em-galhos-de-arvores.jpg);
+    background-position: top;
+    opacity: 0.5;
+    transition: 2.5s;
+    width: 100%;
+    
+}
+.fundo:hover{
+    opacity: 1.0;
+}
+.sobre{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+    max-width: 1050px;
+    height: 110px;
+    padding: 30px;
+    bottom: 350px;
+    position: relative;
+    left: 120px;
+    border-radius: 580px;
+    cursor: pointer;
+}
+
+.iniciativa{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    padding: 30px;
+    padding-left: 320px;
+    padding-right: 320px;
+}
+.iniciativa2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    padding: 30px;
+    padding-left: 320px;
+    padding-right: 320px;
+}
+
+.img-logo{
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 80px;
+    left: 50px;
+}
+.img-profile{
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 120px;
+}
+.img-profile2{
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 120px;
+}
+
+.conteudo-int{
+    padding-right: 20px;
+}
+
+.img2{
+    max-width: 400px;
+    max-height: 315px;
+}
+.img3{
+    max-width: 400px;
+    max-height: 315px;
+}
+.img4{
+    max-width: 400px;
+    max-height: 315px;
+    border-radius: 300px;
+}
+.img5{
+    max-width: 400px;
+    max-height: 315px;
+    border-radius: 300px;
+}
+
+.produtos{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.itens-descricao{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-um{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+    width: 220px;
+    position: relative;
+    right: 90px;
+    bottom: 34px;
+    opacity: 0.5;
+    transition: 1.5s;
+    cursor: pointer;
+}
+.item-um:hover{
+    opacity: 1.5;
+}
+
+.item-dois{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+    width: 220px;
+    position: relative;
+    left: -17px;
+    bottom: 34px;
+    width: 250px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 1.5s;
+}
+.item-dois:hover{
+    opacity: 1.5;
+}
+.item-tres{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+    width: 220px;
+    position: relative;
+    left: 60px;
+    bottom: 34px;
+    width: 250px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 1.5s;
+}
+.item-tres:hover{
+    opacity: 1.5;
+}
+.item-quatro{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+    width: 220px;
+    position: relative;
+    left: 120px;
+    bottom: 34px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 1.5s;
+}
+.item-quatro:hover{
+    opacity: 1.5;
+}
+.nav-despedida{
+    display: flex;
+    font-weight: 400;
+    gap: 30px;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding-bottom:  23px;
+    border-bottom: 0.4px solid;
+    background-image: url(../icons/pombinhos-em-galhos-de-arvores.jpg);
+    background-position: top right;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+}
+
+.eu{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+    max-width: 1090px;
+    height: 120px;
+    border-radius: 580px;
+    padding: 20px;
+    opacity: 0.5;
+    transition: 1.5s;
+}
+.eu:hover{
+    opacity: 1.5;
+}
+.marketing{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+    padding-left: 270px;
+    padding-right: 320px;
+    gap: 40px;
+    align-items: center;
+}
+.item-um-ss-dois{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+    width: 220px;
+    position: relative;
+    left: 290px;
+    bottom: 55px;
+    opacity: 0.5;
+    transition: 1.5s;
+    cursor: pointer;
+}
+.item-um-ss-dois:hover{
+    opacity: 1.5;
+}
+
+@media screen and (max-width: 375px) {
+
+    .welcome{
+        font-size: 13px;
+    }
+    .nav-bar-dois{
+        flex-wrap: nowrap;
+        font-size: 10px;
+        padding-left: 25px;
+    }
+    .fundo{
+        width: 100%;
+        background-position: top right;
+        opacity: 0.5;
+        transition: 2.5s;
+    }
+    .fundo :hover{
+        opacity: 1.5;
+    }
+    .sobre{
+        font-size: 10px;
+        position: relative;
+        left: 1.5px;
+        text-align:center;
+    }
+    .iniciativa{
+        font-size: 10px;
+        position: relative;
+        left: -120px;
+        text-align:center;
+    }
+
+    .img-profile{
+        max-width: 80px;
+        max-height: 80px;
+        border-radius: 80px;
+        left: 30px;
+        position: relative;
+        
+    }
+    .img-profile2{
+        max-width: 80px;
+        max-height: 80px;
+        border-radius: 80px;
+        left: -40px;
+        top: 520px;
+        position: relative;
+    }
+    .conteudo-int{
+        max-height: 80px;
+    }
+  
+    .item-um{
+        position: relative;
+        flex-wrap: nowrap;
+        left: 100px;
+        font-size: 15px;
+        bottom: 1205px;
+    }
+    .item-dois{
+        position: relative;
+        flex-wrap: nowrap;
+        left: -1px;
+        font-size: 15px;
+        bottom: 850px;
+    }
+    .item-tres{
+        position: relative;
+        flex-wrap: nowrap;
+        left: -147px;
+        font-size: 15px;
+        bottom: 480px;
+    }
+    .item-quatro{
+        position: relative;
+        flex-wrap: nowrap;
+        left: -247px;
+        font-size: 15px;
+        bottom: 115px;
+    }
+    .marketing{
+        font-size: 10px;
+        right: 50px;
+        position: relative;
+        flex-direction: column;
+        
+    }
+    .img5{
+        max-width: 140px;
+        max-height: 220px;
+    }
+    .objetivo{
+        text-align:center;
+    }
+    .nav-despedida{
+        font-size: 10px;
+    }
+}

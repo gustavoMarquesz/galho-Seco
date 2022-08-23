@@ -1,0 +1,41 @@
+@media screen and (min-width: 1360px){
+    .nav-bar h1{
+        font-size: 50px;
+    }
+    .img-logo{
+        min-width: 130px;
+        min-height: 130px;
+        border-radius: 130px;
+    }
+    .nav-bar-dois{
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre{
+        font-size: 15px;
+    }
+    .iniciativa{
+        font-size: 16px;
+    }
+    .img-profile2{
+        left: 1100px;
+    }
+
+    .objetivo{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+   
+}
+
+@media screen and (min-width: 1680px){
+    
+}
+
+@media screen and (min-width: 1900px){
+    
+}

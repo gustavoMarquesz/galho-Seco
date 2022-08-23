@@ -18,6 +18,11 @@ a{
     color: #000000;
     text-decoration: none;
 }
+
+h3{
+    display: flex;
+    justify-content: center;
+}
 .instagram{
     max-width: 20px;
     max-height: 20px;
@@ -26,8 +31,8 @@ a{
 .welcome{
     padding-top: 20px;
     border-bottom: 0.4px solid;
-    padding-bottom: 20px;
-    font-size: 320%;
+    padding-bottom: 10px;
+    font-size: 15px;
     font-family: 'Great Vibes', cursive;
 }
 .nav-bar{
@@ -40,11 +45,14 @@ a{
 }
 .nav-bar-dois{
     display: flex;
+    flex-direction: column;
     font-weight: 400;
     gap: 30px;
     justify-content:center;
-    flex-wrap: wrap;
     padding-bottom:  23px;
+    flex-wrap: nowrap;
+    font-size: 10px;
+    padding-left: 25px;
 }
 .logo{
     padding: 5%;
@@ -69,6 +77,9 @@ a{
     opacity: 0.5;
     transition: 2.5s;
     width: 100%;
+    background-position: top right;
+    opacity: 0.5;
+    transition: 2.5s;
     
 }
 .fundo:hover{
@@ -85,16 +96,18 @@ a{
     left: 120px;
     border-radius: 580px;
     cursor: pointer;
+    font-size: 10px;
+    left: 1.5px;
+    text-align:center;
 }
 
 .iniciativa{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
     gap: 50px;
-    padding: 30px;
-    padding-left: 320px;
-    padding-right: 320px;
+    display: flex;
+    font-size: 12px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
 }
 .iniciativa2{
     display: flex;
@@ -113,14 +126,17 @@ a{
     left: 50px;
 }
 .img-profile{
-    max-width: 120px;
-    max-height: 120px;
-    border-radius: 120px;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 100px;
 }
 .img-profile2{
-    max-width: 120px;
-    max-height: 120px;
-    border-radius: 120px;
+    display: flex;
+    position: relative;
+    left: 200px;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 100px;
 }
 
 .conteudo-int{
@@ -141,20 +157,40 @@ a{
     border-radius: 300px;
 }
 .img5{
-    max-width: 400px;
-    max-height: 315px;
-    border-radius: 300px;
+    max-width: 240px;
+    max-height: 250px;
+    border-radius: 15px;
 }
 
 .produtos{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    padding-bottom: 30px;
-    flex-wrap: wrap;
-    flex-direction: row;
+    overflow: hidden;
+    margin: auto;
+    width: 300px;
+    height: 300px;
 }
 
+.produtos .photos{
+    width: 1003%;
+    animation-name: slide;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.produtos .photos img{
+    width: 10%;
+}
+
+@keyframes slide{
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+    50% { margin-left: -205%;}
+    70% { margin-left: -205%;}
+    75% { margin-left: -310%;}
+    95% { margin-left: -310%;}
+    100% { margin-left: -410%;}
+}
 .itens-descricao{
     display: flex;
     flex-direction: row;
@@ -173,6 +209,11 @@ a{
     opacity: 0.5;
     transition: 1.5s;
     cursor: pointer;
+    position: relative;
+    flex-wrap: nowrap;
+    left: 100px;
+    font-size: 15px;
+    bottom: 1205px;
 }
 .item-um:hover{
     opacity: 1.5;
@@ -183,12 +224,14 @@ a{
     color: whitesmoke;
     width: 220px;
     position: relative;
-    left: -17px;
-    bottom: 34px;
     width: 250px;
     cursor: pointer;
     opacity: 0.5;
     transition: 1.5s;
+    flex-wrap: nowrap;
+    left: -1px;
+    font-size: 15px;
+    bottom: 850px;
 }
 .item-dois:hover{
     opacity: 1.5;
@@ -196,14 +239,15 @@ a{
 .item-tres{
     background-color: rgba(0, 0, 0, 0.6);
     color: whitesmoke;
-    width: 220px;
     position: relative;
-    left: 60px;
-    bottom: 34px;
     width: 250px;
     cursor: pointer;
     opacity: 0.5;
     transition: 1.5s;
+    flex-wrap: nowrap;
+    left: -147px;
+    font-size: 15px;
+    bottom: 480px;
 }
 .item-tres:hover{
     opacity: 1.5;
@@ -212,29 +256,20 @@ a{
     background-color: rgba(0, 0, 0, 0.6);
     color: whitesmoke;
     width: 220px;
-    position: relative;
-    left: 120px;
-    bottom: 34px;
     cursor: pointer;
     opacity: 0.5;
     transition: 1.5s;
+    position: relative;
+    flex-wrap: nowrap;
+    left: -247px;
+    font-size: 15px;
+    bottom: 115px;
 }
 .item-quatro:hover{
     opacity: 1.5;
 }
 .nav-despedida{
-    display: flex;
-    font-weight: 400;
-    gap: 30px;
-    justify-content:center;
-    flex-wrap: wrap;
-    padding-bottom:  23px;
-    border-bottom: 0.4px solid;
-    background-image: url(../icons/pombinhos-em-galhos-de-arvores.jpg);
-    background-position: top right;
-    padding: 30px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: whitesmoke;
+    padding-top: 10%;
 }
 
 .eu{
@@ -251,15 +286,20 @@ a{
     opacity: 1.5;
 }
 .marketing{
+    text-align: justify;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 50px;
-    padding-left: 270px;
-    padding-right: 320px;
-    gap: 40px;
+    padding: 5%;
+    font-size: 12px;
     align-items: center;
+    justify-content: center;
 }
+
+.works{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
 .item-um-ss-dois{
     background-color: rgba(0, 0, 0, 0.6);
     color: whitesmoke;
@@ -275,101 +315,3 @@ a{
     opacity: 1.5;
 }
 
-@media screen and (max-width: 375px) {
-
-    .welcome{
-        font-size: 13px;
-    }
-    .nav-bar-dois{
-        flex-wrap: nowrap;
-        font-size: 10px;
-        padding-left: 25px;
-    }
-    .fundo{
-        width: 100%;
-        background-position: top right;
-        opacity: 0.5;
-        transition: 2.5s;
-    }
-    .fundo :hover{
-        opacity: 1.5;
-    }
-    .sobre{
-        font-size: 10px;
-        position: relative;
-        left: 1.5px;
-        text-align:center;
-    }
-    .iniciativa{
-        font-size: 10px;
-        position: relative;
-        left: -120px;
-        text-align:center;
-    }
-
-    .img-profile{
-        max-width: 80px;
-        max-height: 80px;
-        border-radius: 80px;
-        left: 30px;
-        position: relative;
-        
-    }
-    .img-profile2{
-        max-width: 80px;
-        max-height: 80px;
-        border-radius: 80px;
-        left: -40px;
-        top: 520px;
-        position: relative;
-    }
-    .conteudo-int{
-        max-height: 80px;
-    }
-  
-    .item-um{
-        position: relative;
-        flex-wrap: nowrap;
-        left: 100px;
-        font-size: 15px;
-        bottom: 1205px;
-    }
-    .item-dois{
-        position: relative;
-        flex-wrap: nowrap;
-        left: -1px;
-        font-size: 15px;
-        bottom: 850px;
-    }
-    .item-tres{
-        position: relative;
-        flex-wrap: nowrap;
-        left: -147px;
-        font-size: 15px;
-        bottom: 480px;
-    }
-    .item-quatro{
-        position: relative;
-        flex-wrap: nowrap;
-        left: -247px;
-        font-size: 15px;
-        bottom: 115px;
-    }
-    .marketing{
-        font-size: 10px;
-        right: 50px;
-        position: relative;
-        flex-direction: column;
-        
-    }
-    .img5{
-        max-width: 140px;
-        max-height: 220px;
-    }
-    .objetivo{
-        text-align:center;
-    }
-    .nav-despedida{
-        font-size: 10px;
-    }
-}
